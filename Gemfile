@@ -3,6 +3,8 @@ source "https://rubygems.org"
 ruby "2.7.1"
 
 gem "bootsnap", ">= 1.4.2", require: false
+gem "devise"
+gem 'devise-bootstrapped', github: 'king601/devise-bootstrapped', branch: 'bootstrap4'
 gem "jbuilder", "~> 2.7"
 gem "pg", ">= 0.18", "< 2.0"
 gem "puma", "~> 4.1"
@@ -12,7 +14,7 @@ gem "turbolinks", "~> 5"
 gem "webpacker", "~> 4.0"
 
 group :development, :test do
-  gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
+  gem "byebug", platforms: %i[mri mingw x64_mingw]
   gem "database_cleaner"
   gem "factory_bot_rails", git: "http://github.com/thoughtbot/factory_bot_rails"
   gem "rspec-rails"
@@ -38,4 +40,4 @@ group :test do
   gem "webdrivers"
 end
 
-gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem "tzinfo-data", platforms: %i[mingw mswin x64_mingw jruby]
