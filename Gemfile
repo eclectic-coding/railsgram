@@ -4,7 +4,8 @@ ruby "2.7.1"
 
 gem "bootsnap", ">= 1.4.2", require: false
 gem "devise"
-gem 'devise-bootstrapped', github: 'king601/devise-bootstrapped', branch: 'bootstrap4'
+gem "devise-bootstrapped", github: "king601/devise-bootstrapped", branch: "bootstrap4"
+gem "image_processing"
 gem "jbuilder", "~> 2.7"
 gem "pg", ">= 0.18", "< 2.0"
 gem "puma", "~> 4.1"
