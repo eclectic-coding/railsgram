@@ -6,5 +6,8 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   validates :username, uniqueness: true, presence: true
+
   has_one_attached :avatar
+
+  has_many :posts, dependent: :destroy
 end
